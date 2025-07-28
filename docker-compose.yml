@@ -38,6 +38,20 @@ services:
       - mongodb
     restart: on-failure
 
+  postgres:
+    image: postgres:12.3-alpine
+    container_name: postgresdb
+    hostname: postgresdb
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      TZ: Europe/London
+    volumes:
+      - postgres_data:/data/db
+    networks:
+      net:
+        ipv4_address: 172.16.238.12
+    restart: on-failure
 
 networks:
   net:
@@ -48,3 +62,4 @@ networks:
 
 volumes:
   mongo_data:
+  postgres_data:
