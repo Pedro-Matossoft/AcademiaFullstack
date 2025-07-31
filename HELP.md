@@ -8,9 +8,8 @@ For further reference, please consider the following sections:
 * [Create an OCI image](https://docs.spring.io/spring-boot/3.5.4/maven-plugin/build-image.html)
 * [Spring Web](https://docs.spring.io/spring-boot/3.5.4/reference/web/servlet.html)
 * [Spring Security](https://docs.spring.io/spring-boot/3.5.4/reference/web/spring-security.html)
-* [Spring Data JPA](https://docs.spring.io/spring-boot/3.5.4/reference/data/sql.html#data.sql.jpa-and-spring-data)
 * [Spring Data Reactive MongoDB](https://docs.spring.io/spring-boot/3.5.4/reference/data/nosql.html#data.nosql.mongodb)
-* [Docker Compose Support](https://docs.spring.io/spring-boot/3.5.4/reference/features/dev-services.html#features.dev-services.docker-compose)
+* [Spring Data JPA](https://docs.spring.io/spring-boot/3.5.4/reference/data/sql.html#data.sql.jpa-and-spring-data)
 
 ### Guides
 The following guides illustrate how to use some features concretely:
@@ -21,17 +20,8 @@ The following guides illustrate how to use some features concretely:
 * [Securing a Web Application](https://spring.io/guides/gs/securing-web/)
 * [Spring Boot and OAuth2](https://spring.io/guides/tutorials/spring-boot-oauth2/)
 * [Authenticating a User with LDAP](https://spring.io/guides/gs/authenticating-ldap/)
-* [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
 * [Accessing Data with MongoDB](https://spring.io/guides/gs/accessing-data-mongodb/)
-
-### Docker Compose support
-This project contains a Docker Compose file named `compose.yaml`.
-In this file, the following services have been defined:
-
-* mongodb: [`mongo:latest`](https://hub.docker.com/_/mongo)
-* postgres: [`postgres:latest`](https://hub.docker.com/_/postgres)
-
-Please review the tags of the used images and set them to the same as you're running in production.
+* [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
 
 ### Maven Parent overrides
 
